@@ -2,61 +2,57 @@ DongTing Verify.
 │  Readme.md
 │  syscall_64.tbl
 ├─models
-│  ├─DT-abnormal
-│  │  ├─cnnrnn
-│  │  │  └─model_2_00.ckpt
-│  │  │      │  saved_model.pb
-│  │  │      ├─assets
-│  │  │      └─variables
-│  │  │              variables.data-00000-of-00002
-│  │  │              variables.data-00001-of-00002
-│  │  │              variables.index
-│  │  ├─lstm
-│  │  │  └─model_2_00.ckpt
-│  │  │      │  saved_model.pb
-│  │  │      ├─assets
-│  │  │      └─variables
-│  │  │              variables.data-00000-of-00002
-│  │  │              variables.data-00001-of-00002
-│  │  │              variables.index
-│  │  └─wavenet
-│  │      └─model_2_00.ckpt
-│  │          │  saved_model.pb
-│  │          ├─assets
-│  │          └─variables
-│  │                  variables.data-00000-of-00002
-│  │                  variables.data-00001-of-00002
-│  │                  variables.index
-│  └─DT-normal
-│      ├─cnnrnn
-│      │  └─model_2_00.ckpt
-│      │      │  saved_model.pb
-│      │      ├─assets
-│      │      └─variables
-│      │              variables.data-00000-of-00002
-│      │              variables.data-00001-of-00002
-│      │              variables.index
-│      ├─lstm
-│      │  └─model_2_00.ckpt
-│      │      │  saved_model.pb
-│      │      │  
-│      │      ├─assets
-│      │      └─variables
-│      │              variables.data-00000-of-00002
-│      │              variables.data-00001-of-00002
-│      │              variables.index
-│      └─wavenet
-│          └─model_2_00.ckpt
-│              │  saved_model.pb
-│              ├─assets
-│              └─variables
-│                      variables.data-00000-of-00002
-│                      variables.data-00001-of-00002
-│                      variables.index
+│  ├─DT-abnormal-cnnrnn
+│  │  └─model_2_00.ckpt
+│  │      │  saved_model.pb
+│  │      ├─assets
+│  │      └─variables
+│  │              variables.data-00000-of-00002
+│  │              variables.data-00001-of-00002
+│  │              variables.index
+│  ├─DT-abnormal-lstm
+│  │  └─model_2_00.ckpt
+│  │      │  saved_model.pb
+│  │      ├─assets
+│  │      └─variables
+│  │              variables.data-00000-of-00002
+│  │              variables.data-00001-of-00002
+│  │              variables.index
+│  ├─DT-abnormal-wavenet
+│  │  └─model_2_00.ckpt
+│  │      │  saved_model.pb
+│  │      ├─assets
+│  │      └─variables
+│  │              variables.data-00000-of-00002
+│  │              variables.data-00001-of-00002
+│  │              variables.index
+│  ├─DT-normal-cnnrnn
+│  │  └─model_2_00.ckpt
+│  │      │  saved_model.pb
+│  │      ├─assets
+│  │      └─variables
+│  │              variables.data-00000-of-00002
+│  │              variables.data-00001-of-00002
+│  │              variables.index
+│  ├─DT-normal-lstm
+│  │  └─model_2_00.ckpt
+│  │      │  saved_model.pb
+│  │      ├─assets
+│  │      └─variables
+│  │              variables.data-00000-of-00002
+│  │              variables.data-00001-of-00002
+│  │              variables.index
+│  └─DT-normal-wavenet
+│      └─model_2_00.ckpt
+│          │  saved_model.pb
+│          ├─assets
+│          └─variables
+│                  variables.data-00000-of-00002
+│                  variables.data-00001-of-00002
+│                  variables.index
 ├─npz
 │      DT-Abnormal.npz
 │      DT-Normal.npz
-│      
 └─System call sequences
     ├─DT-abnormal
     │      sy_BUG__corrupted_list_in_rxrpc_local_processor_POC1.log
