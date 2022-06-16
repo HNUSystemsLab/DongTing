@@ -1,10 +1,10 @@
 # DongTing Dataset Phase 1 Data
 
-The DongTing Dataset is publishing in two stage, one stage is to publish part of the dataset when the paper is submitted, which is a test subset of the DongTing benchmark data; the other stage is to publish the full data and documents of the dataset after the paper is published. The current submission is a part of the dataset (4.15GB in 85G), which can properly complete the validation experiments in Section 5 of the paper. The data we provide at this stage mainly include:
+We plan to release the DongTing Dataset at two stages. Currently at the first stage, we have released a testing subset (4.15GB) of the dataset together with trained models for paper submission. At the second stage, we would release all the dataset (85G) upon the acceptance of the paper. With the data and the models released at the first stage, the experiment results in Section 5 of the submission can be obtained. The data and code we provide at current stage mainly include:
 
-- The original data of DongTing test subset sequence files, including Normal and Abnormal sequence files, a total of 1688 (4.15GB).
-- On the basis of the DongTing dataset, the NPZ files after coding and initialization, including two files of normal sequence and abnormal sequence (1.38MB).
-- The CNN/RNN, LSTM and WaveNet deep learning models trained by the Abnormal and Normal data in the DongTing Dataset, a total of 6 model files (662MB).
-- Deep learning verification source code. This part of the code comes from the document "Methods for Host-based Intrusion Detection with Deep Learning", which can be downloaded through the link of this article.
+- Raw system call sequence files of the DongTing testing subset, including  1688 normal and abnormal sequence files with a total size of 4.15GB..
+- Encoding vectors of raw sequence files for machine learning. The vectors encoding normal sequences and abnormal sequences (based on syscall\_64.tbl in kernel 5.17) are provided in 2 npz files (1.38MB).
+- The CNN/RNN, LSTM and WaveNet models trained using the training set of the DongTing Dataset. For each model architecture, 2 models are trained with normal and abnormal data respectively. A total of 6 model files (662MB) are provided.
+- Source code for our experiment results. Part of the code is adapted from the release code for the paper "Methods for Host-based Intrusion Detection with Deep Learning".
 
-The test subset sequence files serve as a representation of our work and collection of sequence result data in the form of raw sequences that are not encoded by machine learning. The data of the two NPZ files after sequence length selection (Select Sequences length 8-4495), machine learning encoding (based on syscall_64.tbl in kernel 5.17), including training set, validation set and test set. The deep learning models were trained separately through the normal and abnormal data in DongTing. A total of 18 models were obtained after training. After importing, they can be prepared for the verification of the experiment. The models in the data at this stage are represented by 6 randomly selected models.
+When our dataset is fully released to the public, a permanent connection (DOI) would also be established in the managed warehouse for users to download. 
