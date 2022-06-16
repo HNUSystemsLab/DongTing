@@ -1,4 +1,4 @@
-# DongTing Dataset Phase 1 Data
+# DongTing Dataset release stage 1:
 
 We plan to release the DongTing Dataset at two stages. Currently at the first stage, we have released a testing subset (4.15GB) of the dataset together with trained models for paper submission. At the second stage, we would release all the dataset (85G) upon the acceptance of the paper. With the data and the models released at the first stage, the experiment results in Section 5 of the submission can be obtained. The data and code we provide at current stage mainly include:
 
