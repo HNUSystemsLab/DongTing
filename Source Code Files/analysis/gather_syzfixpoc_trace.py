@@ -533,7 +533,6 @@ class SSH():
         sum_filename = ((f"sum_poc_work_{kversion_ies}-in-{sk_ver_msg}-"
                          f"{time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime())}").replace(".", "") +
                         f".log").replace("\r\n", "")
-        # 统计结果
         msg_3_1 = f"\nTotal analysis sequence files: (all POC numbers, Data-A01) {str(alls)}, With C code(noTag-POC " \
                   f"number，Data-A02) {str(cok)}, Marked (Tag-POC number，Data-A03) {str(tagi)} .\n" \
                   f"---Summary of C code (noTag-POC) analysis results---\n" \
@@ -721,7 +720,7 @@ class SSH():
             msg_3_3 = "The LOG file of the POC is not generated in the remote server yet."
         sum_path = join(Root_path, Log_root_path, log_rfolder_name).replace("\\", "/") + "/"
         sum_filename = (f"sum_poc_getlog_{time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime())}" + ".log").replace(
-            "\r\n", "")  # 统计结果
+            "\r\n", "")
         with open(sum_path + sum_filename, "w+") as sfse:
             sfse.write(
                 f"---Current POC statistics for remote download of LOG --- \n --- current time {time.asctime()}---\n")
@@ -767,12 +766,12 @@ def Labserver_adddb():
                                                 "ktd_server_ssh_port": server_list_sub[5],
                                                 "ktd_server_kernel_ver": server_list_sub[6]})
                 lot_p = find_redo.count_documents({"ktd_info_lot": server_list_sub[9]})
-                if cp > 0:  # 重复
+                if cp > 0:
                     print(f"Duplicate, this server is already in the library, please clear and rewrite. "
                           f"IP: {server_list_sub[1]}，Port: {server_list_sub[5]}，"
                           f"K-Ver: {server_list_sub[6]}")
                     continue
-                elif lot_p > 0:  # 批次重复
+                elif lot_p > 0:
                     print(f"Repeat, a single batch of servers in the library must not be repeated, "
                           f"please re-write after planning. IP: {server_list_sub[1]}，Port: {server_list_sub[5]}，"
                           f"K-Ver: {server_list_sub[6]}, Lot: {server_list_sub[9]}")
