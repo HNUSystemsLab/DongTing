@@ -1,1 +1,0 @@
-syzbot_DB.zip filter=lfs diff=lfs merge=lfs -text
