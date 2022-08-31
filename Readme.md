@@ -1,6 +1,4 @@
-# DongTing Dataset(DT2022) Release Notes
-
-### DongTing: A Large-scale Dataset for Anomaly Detection of the Linux Kernel
+# DongTing: A Large-scale Dataset for Anomaly Detection of the Linux Kernel
 
 DongTing is the first large-scale dataset dedicated to Linux kernel anomaly detection. The dataset covers Linux kernels released in the last five years and includes a total of 18,966 well-labeled normal and attack sequences. The entire dataset is 85GB in size (after decompression). The attack data covers 26 major kernel releases and contains a total of 12,116 system call sequences collected from running 17,855 bug-triggering programs. The normal data comes from 6,850 normal programs in four kernel regression test suites. We maintain the dataset and source code in Zenodo and Github, respectively, and back up the dataset and code in Baidu netdisk.
 
