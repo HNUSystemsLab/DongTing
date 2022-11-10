@@ -10,7 +10,7 @@ The operating environment of the virtual machine is built on the Esxi platform. 
 
 ```python
 # Platform
-# Esxi         6.7
+# Esxi         6.7 (6.x)
 
 # Environment
 # Python       3.9.X
